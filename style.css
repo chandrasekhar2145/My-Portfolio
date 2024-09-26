@@ -32,7 +32,9 @@ body {
     background-color: black;
     opacity: 0.9;
 }
-
+.nav-heading{
+    color:aqua;
+}
 .small-navbar a {
     color: #ffffff;
     transition: transform 0.5s;
@@ -84,6 +86,8 @@ body {
     border-right: 2px solid black;
     padding-right: 5px;
     font-size: 20px;
+    color:rgba(0, 212, 255, 0.9698004201680672);
+    text-decoration:underline yellow solid 2px ;
 }
 
 .cursor {
@@ -168,10 +172,15 @@ body {
     border-radius: 5px;
     transition: filter 0.1s ease;
     filter: grayscale(100%);
+     
 }
 
 .about-profile img:hover {
     filter: grayscale(0%);
+    cursor:progress;
+    transform: scale(1.1);
+    
+
 }
 
 .skills-section {
@@ -668,8 +677,9 @@ footer {
 .art {
     color: #fc466b;
     font-family: "font-family", Sans-Serif;
-    margin-top: 6em;
-    margin-left: 54em;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-bottom: 4.5em;
     font-weight: 700;
     font-style: italic;
 }
