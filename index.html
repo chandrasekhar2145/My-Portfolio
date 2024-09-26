@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandu's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Navbar Section-->
+    <div class="navbar top-0 sticky">
+        <!-- Navbar for medium and large devices -->
+        <nav class="max-w-7xl mx-auto md:px-12 py-8 px-4 w-full flex items-center justify-between" id="mainNav">
+            <div class="myName">
+                <h1 class="font-bold text-white text-xl md:text-2xl lg:text-3xl">Cha<span class="text-yellow-300">ndu</span></h1>
+            </div>
+            <div id="navList" class="hidden md:flex text-white text-sm opacity-0 transform translate-y-8 transition duration-700 animated-text">
+                <a href="#home" class="nav-item mr-6 hover:text-yellow-300 cursor-pointer">HOME</a>
+                <a href="#about" class="nav-item mr-6 hover:text-yellow-300 cursor-pointer">ABOUT</a>
+                <a href="#skills" class="nav-item mr-6 hover:text-yellow-300 cursor-pointer">SKILLS</a>
+                <a href="#projects" class="nav-item mr-6 hover:text-yellow-300 cursor-pointer">PROJECTS</a>
+                <a href="#certifications" class="nav-item mr-6 hover:text-yellow-300 cursor-pointer">CERTIFICATIONS</a>
+                <a href="#contact" class="nav-item mr-6 hover:text-yellow-300 cursor-pointer">CONTACT</a>
+            </div>
+
+            <!-- Navbar for small devices -->
+            <div class="md:hidden">
+                <button id="hamburger" class="p-4 text-gray-800">
+                    <i class="fa-solid fa-bars ham-btn"></i>
+                </button>
+                <div id="menu" class="small-navbar fixed inset-0 text-white flex flex-col items-center justify-center space-y-4 transform -translate-y-full transition-transform duration-300">
+                    <button id="close" class="absolute top-4 right-4">
+                        <i class="fas fa-times close-btn"></i>
+                    </button>
+                    <a href="#home" class="text-1xl hover:text-yellow-400">HOME</a>
+                    <a href="#about" class="text-1xl hover:text-yellow-400">ABOUT</a>
+                    <a href="#skills" class="text-1xl hover:text-yellow-400">SKILLS</a>
+                    <a href="#projects" class="text-1xl hover:text-yellow-400">PROJECTS</a>
+                    <a href="#certifications" class="text-1xl hover:text-yellow-400">CERTIFICATIONS</a>
+                    <a href="#contact" class="text-1xl hover:text-yellow-400">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="custom-pointer"></div>
+
+    <!--Home Section-->
+    <section id="home" class="home flex flex-col md:px-12 px-8 justify-center md:justify-start margintextbottom">
+        <div class="max-width md:mt-12">
+            <div class="home-content md:mt-12">
+
+                <div class="flex flex-col md:mt-12 animated-text opacity-0 transform translate-y-8 transition duration-700">
+                    <h1 class="text-white mt-0  text-xl md:text-3xl lg:text-4xl">Hey, This is</h1>
+                    <h1 class="mt-4 fontsri">Chandra<span class="span-name">sekhar</span> Kuruva</h1>
+                </div>
+
+                <div class="for-small flex mt-4 animated-text opacity-0 transform translate-y-8 transition duration-800">
+                    <h1 class="text-white mr-2 mt-1 head3 text-1xl md:text-2xl">And, I am a</h1>
+                    <div class="typing-container text-yellow-300 text-1xl md:text-2xl lg:text-3xl">
+                        <span class="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--About Section-->
+    <section class="about text-white flex md:p-12 py-12 px-8" id="about">
+        <div class="about-profile px-4 animated-text opacity-0 transform translate-y-8 transition duration-1000">
+            <img src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726461236/IMG_20220310_045549_vgal84.jpg" alt="profile-img" />
+        </div>
+
+        <div class="about-description px-6 animated-text opacity-0 transform translate-y-8 transition duration-800">
+            <h1 class="mb-10"><span class="about-name-2"> ABOUT </span>ME</h1>
+            <p class="text-white">
+                <span class="text-m md:text-2xl">Hello I'm </span><span class="text-300 text-2xl md:text-2xl text-bold about-name">Chandrasekhar Kuruva</span>
+            </p><br>
+            <p>
+                As a dedicated full-stack developer with a bachelor's degree in <span class="about-name"> B.Com </span>(<span class="about-name">Computer Application</span>),
+                I specialize in HTML, CSS, and JavaScript, with a growing proficiency in modern frameworks and
+                libraries like ReactJS, as well as back-end technologies like Node.js. I'm eager to apply my
+                skills in a professional environment and contribute to impactful web experiences.
+                Excited to start my journey in web development, I'm actively seeking growth
+                opportunities to make a meaningful impact.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--Skills Section-->
+    <section class="skills-section flex justify-between items-center w-100 text-white flex md:p-12 py-12 px-8" id="skills">
+        <div class="skills-description px-6 animated-text opacity-0 transform translate-y-8 transition duration-700">
+            <h1 class="mb-10 text-green-500 animated-text opacity-0 transform translate-y-8 transition duration-900"><span class="skill-name"> MY </span>SKILLS</h1>
+            <p>
+                I am an enthusiastic Full-Stack Developer committed to crafting user-centered web applications.
+                My expertise spans front-end technologies, including <span class="text-green-300">HTML</span>, <span class="text-green-300">CSS</span>, and <span class="text-green-300">JavaScript</span> frameworks such as <span class="text-green-300">ReactJs</span>,
+                as well as back-end technologies like <span class="text-green-300">PYTHON</span> and <span class="text-green-300">NodeJs</span>, databases such as <span class="text-green-300">SQLite</span>, and version control tools
+                such as <span class="text-green-300">Git</span> and <span class="text-green-300">GitHub</span>. My capabilities encompass the design, development, and deployment of resilient and scalable web applications.
+                I am keen to make meaningful contributions within a collaborative team environment and remain dedicated to continual learning
+                and professional growth as a developer.
+            </p>
+            <div class="flex">
+                <a target="_main" href="https://drive.google.com/file/d/1VAlnsaf01FV7Sn4KExaPt-3t-s70gLdq/view?usp=sharing">
+                    <button type="button" class="button-resume"><span class="skill-name"> My </span>Resume</button>
+                </a>
+            </div>
+        </div>
+        <div class="skills-container animated-text opacity-0 transform translate-y-8 transition duration-900">
+            <div class="skill">
+                <div class="flex justify-between mb-2 text-sm md:text-1xl"><span>HTML</span><span>95%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex justify-between mb-2 text-sm md:text-1xl"><span>CSS</span><span>90%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex justify-between mb-2 text-sm md:text-1xl"><span>JAVASCRIPT</span><span>80%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex justify-between mb-2 text-sm md:text-1xl"><span>SQL</span><span>98%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 98%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex justify-between mb-2 text-sm md:text-1xl"><span>REACTJS</span><span>75%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex justify-between mb-2 text-sm md:text-1xl"><span>NODEJS</span><span>75%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="flex justify-between mb-2 text-sm md:text-1xl"><span>PYTHON</span><span>70%</span></div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--Projects Section-->
+    <section id="projects" class="projects-container">
+        <div class="projects-heading-container">
+            <h1 class="projects-heading">PROJECTS</h1>
+        </div>
+        <ul class="projects-list">
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726468834/NETFLEX-IMG_qiceew.png" alt="Netflix Clone">
+                <div class="card-container">
+                    <h4 class="project-name">Netflix Clone</h4>
+                    <ul class="tech-list">
+                        <li class="tech">HTML</li>
+                        <li class="tech">CSS</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://netflix-clone-okf4vmrmh-chandrasekhar-kuruvas-projects.vercel.app/" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                        <a target="_main" href="https://github.com/chandrasekhar2145/Netflix-Clone.git" class="project-link">
+                            <button class="code">Code</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/dkm6rcqj9/image/upload/v1724747881/ugj8ip3cqnji63zgncbc.png" alt="Youtube Clone">
+                <div class="card-container">
+                    <h4 class="project-name">Youtube Clone</h4>
+                    <ul class="tech-list">
+                        <li class="tech">React.js</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://chandunxtwatch8.ccbp.tech/login" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                        <a target="_main" href="https://github.com/chandrasekhar2145/Nxt-Watch.git" class="project-link">
+                            <button class="code">Code</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726469220/Covid_igaf8u.png" alt="Covid19India Clone">
+                <div class="card-container">
+                    <h4 class="project-name">Covid Dashboard</h4>
+                    <ul class="tech-list">
+                        <li class="tech">React.js</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://kchanducovid19.ccbp.tech/" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                        <a target="_main" href="https://github.com/chandrasekhar2145/Covid19-Dashboard.git" class="project-link">
+                            <button class="code">Code</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/dkm6rcqj9/image/upload/v1724747867/irparev8uobrsvocpqbr.png" alt="Ecommerce Website">
+                <div class="card-container">
+                    <h4 class="project-name">Ecommerce Website</h4>
+                    <ul class="tech-list">
+                        <li class="tech">React.js</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://chandunxttrend8.ccbp.tech/login" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                        <a target="_main" href="https://github.com/chandrasekhar2145/Nxt-Trendz.git" class="project-link">
+                            <button class="code">Code</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/dkm6rcqj9/image/upload/v1724747860/bmg0sau2luruvzlgn8zi.png" alt="Food Munch">
+                <div class="card-container">
+                    <h4 class="project-name">Food Munch</h4>
+                    <ul class="tech-list">
+                        <li class="tech">Html</li>
+                        <li class="tech">Css</li>
+                        <li class="tech">Bootstrap</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://chandufoodmenu.ccbp.tech/" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                        <a target="_main" href="https://github.com/chandrasekhar2145/Food-Much.git" class="project-link">
+                            <button class="code">Code</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/dkm6rcqj9/image/upload/v1724747851/yfozhrv99ssnhni2lsgq.png" alt="Todo-list">
+                <div class="card-container">
+                    <h4 class="project-name">Todo-list</h4>
+                    <ul class="tech-list">
+                        <li class="tech">HTML</li>
+                        <li class="tech">CSS</li>
+                        <li class="tech">JavaScript</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://chandutodo11.ccbp.tech/" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                        <a target="_main" href="https://github.com/chandrasekhar2145/Todo-List.git" class="project-link">
+                            <button class="code">Code</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726479048/data_analytics_a5ipyd.png" alt="Calculator">
+                <div class="card-container">
+                    <h4 class="project-name">Data Analytics Dashboard</h4>
+                    <ul class="tech-list">
+                        <li class="tech">Power BI</li>
+                        <li class="tech">Kaggle</li>
+                        <li class="tech">MS Excel</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1DlxkN6AuVezQFuD2-nd8Ta0i_pP71DSa/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726482437/Ethical_Hacking_2_hrchee.jpg" alt="Calculator">
+                <div class="card-container">
+                    <h4 class="project-name">Investigating Phishing Email</h4>
+                    <ul class="tech-list">
+                        <li class="tech">Maltego</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1lclZnfc21SBgfaCfRGwEwZjlu_aAwoVy/view" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726483651/vr-project_pvxsq6.png" alt="Calculator">
+                <div class="card-container">
+                    <h4 class="project-name">Frame VR Project</h4>
+                    <ul class="tech-list">
+                        <li class="tech">VR</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://framevr.io/chandu-vr-project" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+    <!--Certifications Section-->
+    <section id="certifications" class="projects-container">
+        <div class="projects-heading-container mt-20">
+            <h1 class="projects-heading">CERTIFICATIONS</h1>
+        </div>
+        <ul class="projects-list">
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726561836/react_wbcuyc.png" alt="React.Js">
+                <div class="card-container">
+                    <h4 class="project-name">React JS</h4>
+                    <ul class="tech-list">
+                        <li class="tech">React.Js</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1O3fY0ggLuH6BOo-dW3hTVR2LAR-yFy6g/view?usp=drive_link" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726562177/Node.js_ppi6zk.png" alt="Node.Js">
+                <div class="card-container">
+                    <h4 class="project-name">Node JS</h4>
+                    <ul class="tech-list">
+                        <li class="tech">Node.Js</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1-nkAAEBUIr29RzEuzx2NctOYB9tWvuQ-/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726562489/verison_git_k9g2ze.png" alt="Git">
+                <div class="card-container">
+                    <h4 class="project-name">Developer Foundations</h4>
+                    <ul class="tech-list">
+                        <li class="tech">Git</li>
+                        <li class="tech">Command Line</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1sLDl7KStLfi8HxvqCLJdKsz-Gu0SGbY1/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726562743/sql_upkhtq.png" alt="SQL">
+                <div class="card-container">
+                    <h4 class="project-name">Databases</h4>
+                    <ul class="tech-list">
+                        <li class="tech">SQL</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1lDoMhsTIv_H_jZPjgZmDFwgb01jgALHv/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726563361/css-flex_frvlip.png" alt="CSS Flexbox">
+                <div class="card-container">
+                    <h4 class="project-name">CSS Flexbox</h4>
+                    <ul class="tech-list">
+                        <li class="tech">Flexbox</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1e5IGck5M8CXtd_RskUr-J-DhyEzu6gcT/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726563679/js_lyu8fw.png" alt="JavaScript">
+                <div class="card-container">
+                    <h4 class="project-name">Dynamic Web Application</h4>
+                    <ul class="tech-list">
+                        <li class="tech">JavaScript</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/15oXu09pPxEx6by7_lngm7HX-PoyfjK_K/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726563869/py_dp1yfd.png" alt="Python">
+                <div class="card-container">
+                    <h4 class="project-name">PYTHON</h4>
+                    <ul class="tech-list">
+                        <li class="tech">Python</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1CG9gIcU4r9HT8_UcXBTpjgMEu-GH5LKE/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726564110/responsive_jrig5b.png" alt="Responsive Website">
+                <div class="card-container">
+                    <h4 class="project-name">Responsive Website</h4>
+                    <ul class="tech-list">
+                        <li class="tech">Bootstrap</li>
+                        <li class="tech">Flexbox</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1EC6Opjlelk5j_2-lXMvQ4Hmi_hRRtCIu/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-card">
+                <img class="project-img" src="https://res.cloudinary.com/ddvqjo4f2/image/upload/v1726564316/static_h4iuud.png" alt="Static Website">
+                <div class="card-container">
+                    <h4 class="project-name">Static Website</h4>
+                    <ul class="tech-list">
+                        <li class="tech">HTML</li>
+                        <li class="tech">CSS</li>
+                        <li class="tech">Bootstrap</li>
+                    </ul>
+                    <div class="project-btns-container">
+                        <a target="_main" href="https://drive.google.com/file/d/1JsFBofRxO8GuKg7cr0ICCNnkMSPXDuyv/view?usp=sharing" class="project-link">
+                            <button class="visit">Visit</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!--Contact Section-->
+    <section class="section-contact mb-12 md:px-12 px-8" id="contact">
+        <div class="container mb-0">
+            <div class="text-center mb-0">
+                <h1 class="mb-1 text-500 text-1xl font-bold md:text-2xl mt-0  contact"> <span class="contact-name"> CONTACT </span>ME</h1>
+            </div>
+            <div class="content">
+                <div class="col-1">
+                    <div class="address-line">
+                        <div class="contact-info">
+                            <div class="flex  address-div">
+                                <i class="fa-solid fa-user text-1xl mr-2"></i>
+                                <h1 class="contact-info-title contact">NAME</h1>
+                            </div>
+                            <div>Chandrasekhar Kuruva</div>
+                        </div>
+                    </div>
+                    <div class="address-line">
+                        <div class="contact-info">
+                            <div class="flex  address-div">
+                                <i class="fa-solid fa-location-dot text-1xl mr-2"></i>
+                                <h1 class="contact-info-title contact">ADDRESS</h1>
+                            </div>
+                            <div>Andhra Pradesh, India</div>
+                        </div>
+                    </div>
+                    <div class="address-line">
+
+                        <div class="contact-info">
+                            <div class="flex  address-div">
+                                <i class="fa-solid fa-envelope  text-1xl mr-2"></i>
+                                <h1 class="contact-info-title contact">EMAIL</h1>
+                            </div>
+                            <div>kuruvachandrasekhar05@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <form>
+                        <div class="form-container">
+                            <h2 class="mb-10 text-xl text-gray-400">Send Message</h2>
+                            <div class="form-row">
+                                <label>Name</label>
+                                <div>
+                                    <input type="text" class="form-field">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label>Email</label>
+                                <div>
+                                    <input type="text" class="form-field">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label>Write your message...</label>
+                                <div>
+                                    <input type="text" class="form-field">
+                                </div>
+                            </div>
+                            <input type="button" class="send-btn" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!--Footer Section-->
+    <footer>
+        <h1 class="text-500 font-bold text-1xl md:text-2xl mb-8 connect"><span class="connect-name"> CONNECT </span> WITH ME 🤝</h1>
+        <div id="media" class="text-2xl md:text-3xl">
+            <a href="https://www.instagram.com/urs_chandu_14/" target="_blank">
+                <i class="fa-brands fa-instagram insta mr-10"></i>
+            </a>
+            <a href="https://x.com/chandukuruvaa" target="_blank">
+                <i class="fa-brands fa-twitter twitter mr-10"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/chandrasekharkuruva/" target="_blank">
+                <i class="fa-brands fa-linkedin linkedin mr-10"></i>
+            </a>
+            <a href="https://github.com/chandrasekhar2145" target="_blank">
+                <i class="fa-brands fa-github git"></i>
+            </a>
+
+        </div>
+
+        <div>
+            <h1 class="art"><span class="art-name">Created </span> By Chandu 💙</h1>
+        </div>
+    </footer>
+</body>
+
+</html>
